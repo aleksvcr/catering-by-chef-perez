@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { Footer, Header, WhatsAppLink } from "../site-components";
 
 export const metadata: Metadata = {
-  title: "Chef Valeria Pérez",
+  title: "Nosotros",
   description:
-    "Conoce a Valeria Pérez, chef profesional y fundadora de Catering by Chef Pérez.",
+    "Conoce la propuesta de Catering by Chef Pérez: cocina de autor, servicio cercano y celebraciones hechas a la medida.",
 };
 
 export default function AboutPage() {
@@ -14,12 +14,12 @@ export default function AboutPage() {
       <main className="about-page">
         <section className="about-hero">
           <div className="about-hero-copy">
-            <p className="eyebrow">La chef detrás de cada detalle</p>
-            <h1>Valeria Pérez.</h1>
+            <p className="eyebrow">Cocina de autor · Servicio cercano</p>
+            <h1>Catering con intención.</h1>
             <p>
-              Chef profesional y fundadora de Catering by Chef Pérez. Su cocina
-              une técnica, hospitalidad y una atención cercana para convertir
-              cada evento en una experiencia memorable.
+              Somos una empresa de catering, pasteles personalizados y
+              repostería que transforma cada ocasión en una experiencia
+              cuidada, personal y memorable.
             </p>
             <WhatsAppLink className="button button-dark">
               Hablemos de tu evento <span aria-hidden="true">↗</span>
@@ -27,29 +27,30 @@ export default function AboutPage() {
           </div>
           <div className="about-hero-photo">
             <img
-              src="/images/chef-valeria-about.jpg"
-              alt="Chef Valeria Pérez decorando un pastel en su cocina"
+              src="/images/event-table.jpg"
+              alt="Montaje preparado por Catering by Chef Pérez para un evento"
             />
-            <span>Chef y fundadora</span>
+            <span>Hecho a la medida</span>
           </div>
         </section>
 
         <section className="about-experience section-wrap">
           <div>
-            <p className="eyebrow">Trayectoria</p>
-            <h2>Experiencia que se siente en el servicio.</h2>
+            <p className="eyebrow">Nuestra forma de trabajar</p>
+            <h2>Cuidamos la ocasión completa.</h2>
           </div>
           <div className="about-experience-copy">
             <p>
-              Su formación incluye experiencias en conceptos gastronómicos de
-              alto nivel, donde consolidó una visión basada en la excelencia,
-              la presentación y el cuidado de cada invitado.
+              Escuchamos tu idea, entendemos el ritmo de tu evento y diseñamos
+              una propuesta coherente desde el menú hasta la presentación.
+              Cada decisión se toma contigo y cada detalle se prepara con
+              atención directa.
             </p>
-            <ul className="career-list" aria-label="Experiencia profesional">
-              <li>Rosewood Abu Dhabi</li>
-              <li>Waldorf Astoria Riviera Maya</li>
-              <li>Pierre Hermé</li>
-              <li>Sud777</li>
+            <ul className="career-list" aria-label="Valores de Catering by Chef Pérez">
+              <li>Propuestas personalizadas</li>
+              <li>Preparación artesanal</li>
+              <li>Presentación cuidada</li>
+              <li>Atención directa</li>
             </ul>
           </div>
         </section>
@@ -57,17 +58,17 @@ export default function AboutPage() {
         <section className="about-belief">
           <div className="about-belief-image">
             <img
-              src="/images/event-table.jpg"
-              alt="Montaje de catering preparado para un evento"
+              src="/images/catering-spread.jpg"
+              alt="Selección de bocadillos preparada para un servicio de catering"
             />
           </div>
           <div className="about-belief-copy">
             <p className="eyebrow">El sello By Chef Pérez</p>
-            <h2>Sabor, presentación y tranquilidad.</h2>
+            <h2>Tu evento, servido con detalle.</h2>
             <p>
-              Valeria y su equipo diseñan propuestas personalizadas para eventos
-              corporativos y sociales. Detrás de cada montaje hay un equipo que
-              cuida los detalles para que tú puedas disfrutar el momento.
+              Diseñamos experiencias para eventos corporativos y sociales con
+              la tranquilidad de un equipo que cuida el sabor, el servicio y
+              la presentación para que tú disfrutes el momento.
             </p>
             <WhatsAppLink className="button button-light">
               Solicitar cotización <span aria-hidden="true">↗</span>

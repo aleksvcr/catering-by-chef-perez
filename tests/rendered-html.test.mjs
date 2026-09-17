@@ -79,15 +79,23 @@ test("renders the contact route with direct contact options", async () => {
   assert.match(html, /name="servicio"/);
 });
 
-test("renders the chef profile as a separate page", async () => {
+test("renders the company about page separately from the chef profile", async () => {
   const response = await render("/nosotros");
   assert.equal(response.status, 200);
 
   const html = await response.text();
-  assert.match(html, /Valeria Pérez/);
-  assert.match(html, /Rosewood Abu Dhabi/);
-  assert.match(html, /Waldorf Astoria Riviera Maya/);
-  assert.match(html, /Pierre Hermé/);
-  assert.match(html, /Sud777/);
-  assert.match(html, /chef-valeria-about\.jpg/);
+  assert.match(html, /Catering con intención/);
+  assert.match(html, /Propuestas personalizadas/);
+  assert.doesNotMatch(html, /Rosewood Abu Dhabi/);
+
+  const chefResponse = await render("/chef-valeria");
+  assert.equal(chefResponse.status, 200);
+
+  const chefHtml = await chefResponse.text();
+  assert.match(chefHtml, /Valeria Pérez/);
+  assert.match(chefHtml, /Rosewood Abu Dhabi/);
+  assert.match(chefHtml, /Waldorf Astoria Riviera Maya/);
+  assert.match(chefHtml, /Pierre Hermé/);
+  assert.match(chefHtml, /Sud777/);
+  assert.match(chefHtml, /chef-valeria-about\.jpg/);
 });

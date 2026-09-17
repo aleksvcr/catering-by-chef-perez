@@ -69,6 +69,7 @@ export function Header({ forceSolid = false }: { forceSolid?: boolean }) {
       </button>
       <nav className={menuOpen ? "main-nav is-open" : "main-nav"} id="main-nav" aria-label="Principal">
         <Link href="/nosotros" onClick={closeMenu}>Nosotros</Link>
+        <Link href="/chef-valeria" onClick={closeMenu}>La chef</Link>
         <div className="nav-dropdown">
           <button type="button" aria-expanded={servicesOpen} onClick={() => setServicesOpen((open) => !open)}>
             Servicios <span aria-hidden="true">⌄</span>
@@ -123,7 +124,8 @@ export function Footer() {
         <div>
           <span>Explora</span>
           <Link href="/#servicios">Servicios</Link>
-          <Link href="/nosotros">La Chef</Link>
+          <Link href="/nosotros">Nosotros</Link>
+          <Link href="/chef-valeria">La Chef</Link>
           <Link href="/contacto">Contacto</Link>
         </div>
         <div>

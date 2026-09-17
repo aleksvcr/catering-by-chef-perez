@@ -64,7 +64,7 @@ export default function Home() {
               <dt>Especialidad</dt><dd>Catering y repostería</dd>
               <dt>Atención</dt><dd>Directa con la chef</dd>
             </dl>
-            <Link className="text-link story-link" href="/nosotros">
+            <Link className="text-link story-link" href="/chef-valeria">
               Conoce a la chef <span aria-hidden="true">→</span>
             </Link>
           </div>
