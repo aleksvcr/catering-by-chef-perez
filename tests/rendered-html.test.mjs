@@ -48,6 +48,7 @@ test("renders the complete Spanish landing page", async () => {
   assert.match(html, /\/servicios\/reposteria/);
   assert.doesNotMatch(html, /images\.unsplash\.com/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton|Starter Project/i);
+  assert.match(html, /class="instagram-icon"/);
 });
 
 test("renders a distinct page for every service", async () => {

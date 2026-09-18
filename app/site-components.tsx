@@ -206,7 +206,10 @@ export function Footer() {
         <div>
           <span>Conversemos</span>
           <a href={`tel:${phoneDial}`}>{phoneDisplay}</a>
-          <a href={instagram} target="_blank" rel="noreferrer">Instagram ↗</a>
+          <a className="instagram-link" href={instagram} target="_blank" rel="noreferrer">
+            <i className="instagram-icon" aria-hidden="true" />
+            Instagram
+          </a>
         </div>
       </div>
       <div className="footer-bottom section-wrap">

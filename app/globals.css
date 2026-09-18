@@ -154,6 +154,10 @@ p { text-wrap: pretty; }
 .footer-links > div { min-width: 165px; display: flex; flex-direction: column; gap: 10px; }
 .footer-links span { margin-bottom: 6px; color: var(--sand); font-size: .61rem; font-weight: 600; letter-spacing: .13em; text-transform: uppercase; }
 .footer-links a { font-size: .95rem; }
+.footer-links .instagram-link { display: inline-flex; align-items: center; gap: 9px; }
+.instagram-icon { position: relative; width: 17px; height: 17px; flex: 0 0 17px; border: 1.4px solid currentColor; border-radius: 5px; }
+.instagram-icon::before { content: ""; position: absolute; inset: 3.5px; border: 1.35px solid currentColor; border-radius: 50%; }
+.instagram-icon::after { content: ""; position: absolute; top: 2.5px; right: 2.5px; width: 2.2px; height: 2.2px; border-radius: 50%; background: currentColor; }
 .footer-bottom { display: flex; justify-content: space-between; gap: 20px; padding-top: 21px; border-top: 1px solid rgba(255,255,255,.17); color: rgba(255,255,255,.48); font-size: .59rem; letter-spacing: .1em; text-transform: uppercase; }
 
 /* Contact */
