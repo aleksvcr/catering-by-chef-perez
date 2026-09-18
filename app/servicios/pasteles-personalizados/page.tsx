@@ -13,10 +13,10 @@ export default function PastelesPage() {
     heroAlt="Pastel personalizado decorado con flores rosas y blancas"
     description="Traducimos tu ocasión, referencias y preferencias en una pieza única. Definimos contigo el estilo, los sabores y el tamaño para lograr un pastel especial por dentro y por fuera."
     includes={["Diseño personalizado", "Selección de sabores y rellenos", "Tamaño adecuado para tus invitados"]}
+    galleryMode="grid"
     gallery={[
       { src: "/images/custom-cake.jpg", alt: "Detalle de pastel floral personalizado", caption: "Una pieza creada para la ocasión" },
       { src: "/images/chef-valeria-about.jpg", alt: "Chef Valeria Pérez decorando un pastel", caption: "Preparación y decoración artesanal" },
-      { src: "/images/chef-valeria-profile-side.jpg", alt: "Chef Valeria Pérez observando su trabajo", caption: "Diseñado y supervisado personalmente por la chef", position: "center 34%" },
     ]}
     message="Hola, me gustaría solicitar una cotización para un pastel personalizado."
   />;

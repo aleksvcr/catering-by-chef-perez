@@ -17,7 +17,6 @@ export default function ReposteriaPage() {
       { src: "/images/pastry.jpg", alt: "Croissants artesanales de almendra", caption: "Horneado artesanal" },
       { src: "/images/reposteria-conchas.jpg", alt: "Conchas tradicionales en un montaje de repostería", caption: "Piezas tradicionales con presentación cuidada", position: "center 64%" },
       { src: "/images/reposteria-mini-croissants.jpg", alt: "Mini croissants de chocolate servidos en mesa", caption: "Porciones pensadas para compartir" },
-      { src: "/images/reposteria-dessert-cups.jpg", alt: "Vasitos de postre con frutos rojos", caption: "Mesas dulces con variedad y color" },
       { src: "/images/reposteria-pan-dulce.jpg", alt: "Selección de pan dulce y mini croissants", caption: "Una selección horneada para cada ocasión" },
     ]}
     message="Hola, me gustaría solicitar una cotización de repostería."

@@ -11,6 +11,7 @@ export type ServiceDetailProps = {
   description: string;
   includes: string[];
   gallery: CarouselImage[];
+  galleryMode?: "carousel" | "grid";
   message: string;
 };
 
@@ -52,7 +53,22 @@ export function ServiceDetail(props: ServiceDetailProps) {
             <p className="eyebrow">Una mirada al servicio</p>
             <h2>Detalles que hablan por sí solos.</h2>
           </div>
-          <ImageCarousel images={props.gallery} label={`Galería de ${props.title}`} />
+          {props.galleryMode === "grid" ? (
+            <div className="service-detail-gallery-grid">
+              {props.gallery.map((image) => (
+                <figure key={image.src}>
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    style={{ objectPosition: image.position ?? "center" }}
+                  />
+                  {image.caption ? <figcaption>{image.caption}</figcaption> : null}
+                </figure>
+              ))}
+            </div>
+          ) : (
+            <ImageCarousel images={props.gallery} label={`Galería de ${props.title}`} />
+          )}
         </section>
 
         <section className="service-detail-cta">

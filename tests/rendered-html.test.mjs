@@ -52,21 +52,30 @@ test("renders the complete Spanish landing page", async () => {
 
 test("renders a distinct page for every service", async () => {
   const cases = [
-    ["/servicios/catering", "Menús personalizados", "cotización de catering"],
-    ["/servicios/pasteles-personalizados", "Selección de sabores y rellenos", "pastel personalizado"],
-    ["/servicios/reposteria", "Mesas de postres", "cotización de repostería"],
+    ["/servicios/catering", "Menús personalizados", "cotización de catering", true],
+    ["/servicios/pasteles-personalizados", "Selección de sabores y rellenos", "pastel personalizado", false],
+    ["/servicios/reposteria", "Mesas de postres", "cotización de repostería", true],
   ];
 
-  for (const [pathname, uniqueCopy, message] of cases) {
+  for (const [pathname, uniqueCopy, message, hasCarousel] of cases) {
     const response = await render(pathname);
     assert.equal(response.status, 200);
     const html = await response.text();
     assert.match(html, new RegExp(uniqueCopy, "i"));
     assert.match(html, new RegExp(message, "i"));
     assert.match(html, /Solicitar cotización/);
-    assert.match(html, /aria-roledescription="carrusel"/);
-    assert.match(html, /Imagen anterior/);
-    assert.match(html, /Siguiente imagen/);
+    if (hasCarousel) {
+      assert.match(html, /aria-roledescription="carrusel"/);
+      assert.match(html, /Imagen anterior/);
+      assert.match(html, /Siguiente imagen/);
+    } else {
+      assert.doesNotMatch(html, /aria-roledescription="carrusel"/);
+      assert.match(html, /service-detail-gallery-grid/);
+    }
+
+    if (pathname === "/servicios/reposteria") {
+      assert.doesNotMatch(html, /reposteria-dessert-cups\.jpg/);
+    }
   }
 });
 
