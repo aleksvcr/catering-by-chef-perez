@@ -64,6 +64,9 @@ test("renders a distinct page for every service", async () => {
     assert.match(html, new RegExp(uniqueCopy, "i"));
     assert.match(html, new RegExp(message, "i"));
     assert.match(html, /Solicitar cotización/);
+    assert.match(html, /aria-roledescription="carrusel"/);
+    assert.match(html, /Imagen anterior/);
+    assert.match(html, /Siguiente imagen/);
   }
 });
 
@@ -97,5 +100,5 @@ test("renders the company about page separately from the chef profile", async ()
   assert.match(chefHtml, /Waldorf Astoria Riviera Maya/);
   assert.match(chefHtml, /Pierre Hermé/);
   assert.match(chefHtml, /Sud777/);
-  assert.match(chefHtml, /chef-valeria-about\.jpg/);
+  assert.match(chefHtml, /chef-valeria-profile-side\.jpg/);
 });

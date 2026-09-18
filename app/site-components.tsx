@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 
 const phoneDisplay = "+52 55 6122 1199";
 const phoneDial = "+525561221199";
@@ -19,6 +19,81 @@ export function WhatsAppLink({
 }) {
   const href = `https://wa.me/525561221199?text=${encodeURIComponent(message)}`;
   return <a className={className} href={href} target="_blank" rel="noreferrer">{children}</a>;
+}
+
+export type CarouselImage = {
+  src: string;
+  alt: string;
+  caption: string;
+  position?: string;
+};
+
+export function ImageCarousel({
+  images,
+  label,
+}: {
+  images: CarouselImage[];
+  label: string;
+}) {
+  const [active, setActive] = useState(0);
+  const touchStart = useRef<number | null>(null);
+
+  const show = (index: number) => {
+    setActive((index + images.length) % images.length);
+  };
+
+  const finishSwipe = (clientX: number) => {
+    if (touchStart.current === null) return;
+    const distance = clientX - touchStart.current;
+    if (Math.abs(distance) > 45) show(active + (distance < 0 ? 1 : -1));
+    touchStart.current = null;
+  };
+
+  return (
+    <div
+      className="service-carousel"
+      role="region"
+      aria-roledescription="carrusel"
+      aria-label={label}
+      tabIndex={0}
+      onKeyDown={(event) => {
+        if (event.key === "ArrowLeft") show(active - 1);
+        if (event.key === "ArrowRight") show(active + 1);
+      }}
+    >
+      <div
+        className="carousel-viewport"
+        onTouchStart={(event) => { touchStart.current = event.touches[0].clientX; }}
+        onTouchEnd={(event) => finishSwipe(event.changedTouches[0].clientX)}
+      >
+        <div className="carousel-track" style={{ transform: `translateX(-${active * 100}%)` }}>
+          {images.map((image, index) => (
+            <figure className="carousel-slide" key={image.src} aria-hidden={index !== active}>
+              <img src={image.src} alt={image.alt} style={{ objectPosition: image.position }} />
+              <figcaption>{image.caption}</figcaption>
+            </figure>
+          ))}
+        </div>
+      </div>
+      <div className="carousel-controls">
+        <button type="button" className="carousel-arrow" onClick={() => show(active - 1)} aria-label="Imagen anterior">←</button>
+        <div className="carousel-dots" aria-label="Elegir imagen">
+          {images.map((image, index) => (
+            <button
+              type="button"
+              key={image.src}
+              className={index === active ? "is-active" : ""}
+              onClick={() => show(index)}
+              aria-label={`Ver imagen ${index + 1}`}
+              aria-current={index === active ? "true" : undefined}
+            />
+          ))}
+        </div>
+        <span className="carousel-count" aria-live="polite">{String(active + 1).padStart(2, "0")} / {String(images.length).padStart(2, "0")}</span>
+        <button type="button" className="carousel-arrow" onClick={() => show(active + 1)} aria-label="Siguiente imagen">→</button>
+      </div>
+    </div>
+  );
 }
 
 export function Brand() {

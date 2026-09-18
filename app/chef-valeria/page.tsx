@@ -27,8 +27,8 @@ export default function ChefValeriaPage() {
           </div>
           <div className="about-hero-photo">
             <img
-              src="/images/chef-valeria-about.jpg"
-              alt="Chef Valeria Pérez decorando un pastel en su cocina"
+              src="/images/chef-valeria-profile-side.jpg"
+              alt="Chef Valeria Pérez mirando hacia un costado"
             />
             <span>Chef y fundadora</span>
           </div>
@@ -57,8 +57,9 @@ export default function ChefValeriaPage() {
         <section className="about-belief">
           <div className="about-belief-image">
             <img
-              src="/images/event-table.jpg"
-              alt="Montaje de catering preparado para un evento"
+              src="/images/chef-valeria-profile-front.jpg"
+              alt="Retrato de Chef Valeria Pérez"
+              style={{ objectPosition: "center 32%" }}
             />
           </div>
           <div className="about-belief-copy">

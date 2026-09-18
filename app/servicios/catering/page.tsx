@@ -15,6 +15,9 @@ export default function CateringPage() {
     includes={["Menús personalizados", "Bocados dulces y salados", "Montaje y presentación para tu evento"]}
     gallery={[
       { src: "/images/catering-spread.jpg", alt: "Selección de bocadillos y fruta", caption: "Variedad pensada para compartir" },
+      { src: "/images/catering-croissant-sandwiches.jpg", alt: "Croissants rellenos preparados para un evento", caption: "Bocados salados listos para compartir" },
+      { src: "/images/catering-drinks.jpg", alt: "Bebidas servidas durante un evento", caption: "Servicio coordinado de principio a fin" },
+      { src: "/images/catering-brand-detail.jpg", alt: "Tarjeta de Valeria Pérez entre flores del montaje", caption: "Una presentación con identidad propia" },
       { src: "/images/canapes.jpg", alt: "Canapés artesanales de salmón", caption: "Bocados preparados al detalle" },
     ]}
     message="Hola, me gustaría solicitar una cotización de catering para mi evento."

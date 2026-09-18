@@ -191,11 +191,23 @@ p { text-wrap: pretty; }
 .service-detail-about > div:last-child > p { max-width: 50ch; margin-bottom: 34px; color: var(--muted); line-height: 1.8; }
 .service-detail-about ul { margin: 0; padding: 0; border-top: 1px solid var(--line); list-style: none; }
 .service-detail-about li { padding: 17px 0; border-bottom: 1px solid var(--line); font-family: var(--display); font-size: 1.08rem; font-weight: 500; }
-.service-detail-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(18px,2.5vw,34px); padding-bottom: clamp(100px,13vw,170px); }
-.service-detail-gallery figure { margin: 0; }
-.service-detail-gallery img { height: clamp(480px,58vw,720px); object-fit: cover; }
-.service-detail-gallery figure:nth-child(2) { padding-top: 72px; }
-.service-detail-gallery figcaption { padding-top: 13px; color: var(--muted); font-size: .62rem; font-weight: 600; letter-spacing: .11em; text-transform: uppercase; }
+.service-detail-gallery { padding-bottom: clamp(100px,13vw,170px); }
+.carousel-heading { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 34px; }
+.carousel-heading .eyebrow { margin: 0; }
+.carousel-heading h2 { max-width: 12ch; font-family: var(--display); font-size: clamp(2.3rem,4.5vw,4.4rem); font-weight: 500; letter-spacing: -.055em; line-height: .98; text-align: right; }
+.service-carousel { min-width: 0; outline: none; }
+.carousel-viewport { position: relative; overflow: hidden; background: #ded2c2; touch-action: pan-y; }
+.carousel-track { display: flex; transition: transform .65s var(--ease); }
+.carousel-slide { position: relative; flex: 0 0 100%; margin: 0; }
+.carousel-slide img { width: 100%; aspect-ratio: 16/9; object-fit: cover; }
+.carousel-slide figcaption { position: absolute; right: 18px; bottom: 18px; max-width: calc(100% - 36px); padding: 10px 14px; border-radius: 999px; background: rgba(247,242,233,.92); color: var(--ink); font-size: .61rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; backdrop-filter: blur(8px); }
+.carousel-controls { min-height: 64px; display: grid; grid-template-columns: auto 1fr auto auto; align-items: center; gap: 18px; border-bottom: 1px solid var(--line); }
+.carousel-arrow { width: 43px; height: 43px; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 50%; background: transparent; font-size: 1rem; cursor: pointer; transition: background .2s, color .2s; }
+.carousel-arrow:hover { background: var(--ink); color: var(--cream); }
+.carousel-dots { display: flex; align-items: center; gap: 8px; }
+.carousel-dots button { width: 27px; height: 2px; padding: 0; border: 0; background: rgba(40,35,31,.24); cursor: pointer; transition: width .25s, background .25s; }
+.carousel-dots button.is-active { width: 48px; background: var(--ink); }
+.carousel-count { color: var(--muted); font-size: .63rem; font-weight: 600; letter-spacing: .11em; }
 .service-detail-cta { min-height: 590px; display: grid; place-items: center; align-content: center; padding: 80px 24px; background: var(--brown-dark); color: var(--white); text-align: center; }
 .service-detail-cta .eyebrow { color: var(--sand); }
 .service-detail-cta h2 { max-width: 10ch; margin-bottom: 22px; font-family: var(--display); font-size: clamp(3rem,6vw,6rem); font-weight: 500; letter-spacing: -.065em; line-height: .9; }
@@ -299,9 +311,15 @@ p { text-wrap: pretty; }
   .service-detail-title h1 { font-size: clamp(3.7rem,17vw,5.4rem); }
   .service-detail-photo { min-height: 560px; }
   .service-detail-about { gap: 45px; }
-  .service-detail-gallery { grid-template-columns: 1fr; gap: 44px; }
-  .service-detail-gallery img { height: 500px; }
-  .service-detail-gallery figure:nth-child(2) { width: 84%; margin-left: auto; padding-top: 0; }
+  .carousel-heading { align-items: flex-start; flex-direction: column; }
+  .carousel-heading h2 { text-align: left; }
+  .carousel-slide img { aspect-ratio: 4/3; }
+  .carousel-slide figcaption { right: 12px; bottom: 12px; }
+  .carousel-controls { grid-template-columns: auto 1fr auto; gap: 11px; }
+  .carousel-count { display: none; }
+  .carousel-dots { justify-content: center; }
+  .carousel-dots button { width: 18px; }
+  .carousel-dots button.is-active { width: 33px; }
   .service-detail-cta { min-height: 560px; }
   .about-page { padding-top: 68px; }
   .about-hero { min-height: 0; grid-template-columns: 1fr; }

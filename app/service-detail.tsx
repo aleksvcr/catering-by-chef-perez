@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Footer, Header, WhatsAppLink } from "./site-components";
+import { Footer, Header, ImageCarousel, WhatsAppLink, type CarouselImage } from "./site-components";
 
 export type ServiceDetailProps = {
   eyebrow: string;
@@ -10,7 +10,7 @@ export type ServiceDetailProps = {
   number: string;
   description: string;
   includes: string[];
-  gallery: Array<{ src: string; alt: string; caption: string }>;
+  gallery: CarouselImage[];
   message: string;
 };
 
@@ -47,13 +47,12 @@ export function ServiceDetail(props: ServiceDetailProps) {
           </div>
         </section>
 
-        <section className="service-detail-gallery section-wrap" aria-label={`Galería de ${props.title}`}>
-          {props.gallery.map((image) => (
-            <figure key={image.src}>
-              <img src={image.src} alt={image.alt} />
-              <figcaption>{image.caption}</figcaption>
-            </figure>
-          ))}
+        <section className="service-detail-gallery section-wrap">
+          <div className="carousel-heading">
+            <p className="eyebrow">Una mirada al servicio</p>
+            <h2>Detalles que hablan por sí solos.</h2>
+          </div>
+          <ImageCarousel images={props.gallery} label={`Galería de ${props.title}`} />
         </section>
 
         <section className="service-detail-cta">
