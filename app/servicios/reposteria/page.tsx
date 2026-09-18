@@ -11,7 +11,7 @@ export default function ReposteriaPage() {
     intro="Piezas dulces y mesas de postres preparadas para compartir, regalar y celebrar."
     heroImage="/images/pastry.jpg"
     heroAlt="Croissants artesanales de almendra"
-    description="Preparamos selecciones de repostería con equilibrio entre sabor y presentación. Podemos crear desde una pequeña variedad para una reunión hasta una mesa dulce completa."
+    description="Valeria prepara selecciones de repostería con equilibrio entre sabor y presentación, desde una pequeña variedad para una reunión hasta una mesa dulce completa."
     includes={["Selecciones de piezas dulces", "Mesas de postres", "Cantidades adaptadas a cada evento"]}
     gallery={[
       { src: "/images/pastry.jpg", alt: "Croissants artesanales de almendra", caption: "Horneado artesanal" },

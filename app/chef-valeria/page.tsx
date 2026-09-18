@@ -15,7 +15,7 @@ export default function ChefValeriaPage() {
         <section className="about-hero">
           <div className="about-hero-copy">
             <p className="eyebrow">La chef detrás de cada detalle</p>
-            <h1>Valeria Pérez.</h1>
+            <h1>Valeria Pérez</h1>
             <p>
               Chef profesional y fundadora de Catering by Chef Pérez. Su cocina
               une técnica, hospitalidad y una atención cercana para convertir
@@ -66,9 +66,9 @@ export default function ChefValeriaPage() {
             <p className="eyebrow">El sello By Chef Pérez</p>
             <h2>Sabor, presentación y tranquilidad.</h2>
             <p>
-              Valeria y su equipo diseñan propuestas personalizadas para eventos
-              corporativos y sociales. Detrás de cada montaje hay un equipo que
-              cuida los detalles para que tú puedas disfrutar el momento.
+              Valeria diseña propuestas personalizadas para eventos corporativos
+              y sociales. Ella supervisa cada montaje y cuida personalmente los
+              detalles para que tú puedas disfrutar el momento.
             </p>
             <WhatsAppLink className="button button-light">
               Solicitar cotización <span aria-hidden="true">↗</span>

@@ -34,7 +34,7 @@ export default function Contacto() {
       <main className="contact-page">
         <section className="contact-intro">
           <p className="eyebrow">Contacto</p>
-          <h1>Cuéntanos qué quieres celebrar.</h1>
+          <h1>Cuéntale a Valeria qué quieres celebrar.</h1>
           <p>
             Compártenos los primeros detalles. Prepararemos contigo una
             propuesta pensada para tu ocasión.
@@ -89,7 +89,7 @@ export default function Contacto() {
               </label>
             </div>
             <label>
-              Cuéntanos un poco más
+              Cuéntale un poco más
               <textarea
                 name="detalles"
                 rows={5}

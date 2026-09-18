@@ -50,12 +50,12 @@ export default function Home() {
           </div>
           <div className="story-notes">
             <p>
-              Catering by Chef Perez es una empresa establecida y dirigida por
-              una chef. Creamos experiencias de catering, pasteles y repostería
-              que se sienten personales desde la primera conversación.
+              Catering by Chef Perez es una empresa fundada y dirigida por la
+              chef Valeria Pérez. Cada experiencia de catering, pasteles y
+              repostería se siente personal desde la primera conversación.
             </p>
             <p>
-              Escuchamos tu idea, entendemos la ocasión y construimos una
+              Valeria escucha tu idea, entiende la ocasión y construye una
               propuesta hecha a la medida, con atención directa y preparación
               artesanal.
             </p>
@@ -74,7 +74,7 @@ export default function Home() {
           <div className="section-wrap">
             <div className="section-heading">
               <div>
-                <p className="eyebrow">Lo que hacemos</p>
+                <p className="eyebrow">Lo que ofrece</p>
                 <h2 id="services-title">Tres formas de celebrar.</h2>
               </div>
               <p>
@@ -102,7 +102,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="gallery-strip section-wrap" aria-label="Selección de nuestro trabajo">
+        <section className="gallery-strip section-wrap" aria-label="Selección del trabajo de Chef Pérez">
           <figure className="gallery-large">
             <img src="/images/event-table.jpg" alt="Mesa de catering preparada para un evento" />
             <figcaption>Montaje y servicio · Eventos</figcaption>
@@ -124,7 +124,7 @@ export default function Home() {
             <p>
               La firma de Chef Perez está en la selección del menú, la textura
               de cada postre y la presentación final. Tú disfrutas el momento;
-              nosotros cuidamos el resto.
+              Valeria cuida el resto.
             </p>
             <div className="chef-values">
               <div><strong>01</strong><span>Propuestas personalizadas</span></div>
@@ -140,12 +140,12 @@ export default function Home() {
               <p className="eyebrow">Así trabajamos</p>
               <h2>Simple, cercano y a tu medida.</h2>
             </div>
-            <p>De tu primera idea al momento de servir, te acompañamos en cada decisión.</p>
+            <p>De tu primera idea al momento de servir, Valeria te acompaña en cada decisión.</p>
           </div>
           <ol className="process-list">
-            <li><span className="process-number">01</span><h3>Cuéntanos tu idea</h3><p>Fecha, número de personas, tipo de evento y lo que te gustaría crear.</p></li>
-            <li><span className="process-number">02</span><h3>Diseñamos la propuesta</h3><p>Construimos una opción personalizada para tu ocasión y presupuesto.</p></li>
-            <li><span className="process-number">03</span><h3>Cuidamos el resto</h3><p>Preparamos cada detalle para que tú puedas disfrutar el momento.</p></li>
+            <li><span className="process-number">01</span><h3>Cuéntale tu idea</h3><p>Fecha, número de personas, tipo de evento y lo que te gustaría crear.</p></li>
+            <li><span className="process-number">02</span><h3>Valeria diseña la propuesta</h3><p>Construye una opción personalizada para tu ocasión y presupuesto.</p></li>
+            <li><span className="process-number">03</span><h3>Valeria cuida el resto</h3><p>Prepara cada detalle para que tú puedas disfrutar el momento.</p></li>
           </ol>
         </section>
 
@@ -154,7 +154,7 @@ export default function Home() {
           <div className="quote-content">
             <p className="eyebrow">Tu celebración empieza aquí</p>
             <h2>Hablemos de lo que tienes en mente.</h2>
-            <p>Cuéntanos la ocasión y te ayudamos a convertirla en una propuesta hecha especialmente para ti.</p>
+            <p>Cuéntale la ocasión a Valeria y ella te ayudará a convertirla en una propuesta hecha especialmente para ti.</p>
             <WhatsAppLink className="button button-light">
               Cotizar por WhatsApp <span aria-hidden="true">↗</span>
             </WhatsAppLink>
@@ -166,7 +166,7 @@ export default function Home() {
           <div className="faq-list">
             <details><summary>¿Con cuánta anticipación debo cotizar?</summary><p>Entre más pronto nos cuentes tu idea, mejor podremos cuidar cada detalle. La disponibilidad depende de la fecha y el servicio.</p></details>
             <details><summary>¿Los menús y pasteles son personalizados?</summary><p>Sí. Cada propuesta parte de tu ocasión, preferencias, número de invitados y presupuesto.</p></details>
-            <details><summary>¿Cómo solicito una cotización?</summary><p>Escríbenos por WhatsApp con la fecha, tipo de evento y número aproximado de personas. Te responderemos para afinar los detalles.</p></details>
+            <details><summary>¿Cómo solicito una cotización?</summary><p>Escríbele a Valeria por WhatsApp con la fecha, tipo de evento y número aproximado de personas. Ella te responderá para afinar los detalles.</p></details>
           </div>
         </section>
       </main>

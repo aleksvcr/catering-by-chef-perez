@@ -73,7 +73,7 @@ export function ServiceDetail(props: ServiceDetailProps) {
 
         <section className="service-detail-cta">
           <p className="eyebrow">Siguiente paso</p>
-          <h2>Cuéntanos qué tienes en mente.</h2>
+          <h2>Cuéntale a Valeria qué tienes en mente.</h2>
           <p>Fecha, número de personas y la idea general son suficientes para comenzar.</p>
           <div>
             <WhatsAppLink className="button button-light" message={props.message}>Cotizar por WhatsApp <span aria-hidden="true">↗</span></WhatsAppLink>

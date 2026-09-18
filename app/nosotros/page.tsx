@@ -17,9 +17,9 @@ export default function AboutPage() {
             <p className="eyebrow">Cocina de autor · Servicio cercano</p>
             <h1>Catering con intención.</h1>
             <p>
-              Somos una empresa de catering, pasteles personalizados y
-              repostería que transforma cada ocasión en una experiencia
-              cuidada, personal y memorable.
+              Catering by Chef Pérez es un proyecto de catering, pasteles
+              personalizados y repostería fundado y dirigido por Valeria, quien
+              transforma cada ocasión en una experiencia personal y memorable.
             </p>
             <WhatsAppLink className="button button-dark">
               Hablemos de tu evento <span aria-hidden="true">↗</span>
@@ -36,15 +36,15 @@ export default function AboutPage() {
 
         <section className="about-experience section-wrap">
           <div>
-            <p className="eyebrow">Nuestra forma de trabajar</p>
-            <h2>Cuidamos la ocasión completa.</h2>
+            <p className="eyebrow">Su forma de trabajar</p>
+            <h2>Cuida la ocasión completa.</h2>
           </div>
           <div className="about-experience-copy">
             <p>
-              Escuchamos tu idea, entendemos el ritmo de tu evento y diseñamos
+              Valeria escucha tu idea, entiende el ritmo de tu evento y diseña
               una propuesta coherente desde el menú hasta la presentación.
-              Cada decisión se toma contigo y cada detalle se prepara con
-              atención directa.
+              Cada decisión se toma contigo y cada detalle recibe su atención
+              directa.
             </p>
             <ul className="career-list" aria-label="Valores de Catering by Chef Pérez">
               <li>Propuestas personalizadas</li>
@@ -66,9 +66,9 @@ export default function AboutPage() {
             <p className="eyebrow">El sello By Chef Pérez</p>
             <h2>Tu evento, servido con detalle.</h2>
             <p>
-              Diseñamos experiencias para eventos corporativos y sociales con
-              la tranquilidad de un equipo que cuida el sabor, el servicio y
-              la presentación para que tú disfrutes el momento.
+              Valeria diseña experiencias para eventos corporativos y sociales,
+              cuidando personalmente el sabor, el servicio y la presentación
+              para que tú disfrutes el momento.
             </p>
             <WhatsAppLink className="button button-light">
               Solicitar cotización <span aria-hidden="true">↗</span>

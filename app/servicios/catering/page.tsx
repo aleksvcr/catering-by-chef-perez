@@ -11,7 +11,7 @@ export default function CateringPage() {
     intro="Menús, montaje y servicio coordinados para que tú puedas disfrutar el evento."
     heroImage="/images/event-table.jpg"
     heroAlt="Mesa completa de catering preparada para un evento"
-    description="Diseñamos una propuesta de alimentos y presentación que responde al tipo de encuentro, número de invitados y ritmo del evento. Cada detalle se coordina directamente con la chef."
+    description="Valeria diseña una propuesta de alimentos y presentación que responde al tipo de encuentro, número de invitados y ritmo del evento. Cada detalle se coordina directamente con ella."
     includes={["Menús personalizados", "Bocados dulces y salados", "Montaje y presentación para tu evento"]}
     gallery={[
       { src: "/images/catering-spread.jpg", alt: "Selección de bocadillos y fruta", caption: "Variedad pensada para compartir" },

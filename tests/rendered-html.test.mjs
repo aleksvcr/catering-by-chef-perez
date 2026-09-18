@@ -84,7 +84,7 @@ test("renders the contact route with direct contact options", async () => {
   assert.equal(response.status, 200);
 
   const html = await response.text();
-  assert.match(html, /Cuéntanos qué quieres celebrar\./);
+  assert.match(html, /Cuéntale a Valeria qué quieres celebrar\./);
   assert.match(html, /\+52 55 6122 1199/);
   assert.match(html, /@catering\.bychefperez/);
   assert.match(html, /Continuar en WhatsApp/);
