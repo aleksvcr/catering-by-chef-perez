@@ -42,7 +42,10 @@ test("renders the complete Spanish landing page", async () => {
   assert.match(html, /Repostería/);
   assert.match(html, /https:\/\/wa\.me\/525561221199/);
   assert.match(html, /https:\/\/catering\.example\/og\.png/);
-  assert.match(html, /\/images\/hero-event\.jpg/);
+  assert.match(html, /\/images\/hero-event-refined\.jpg/);
+  assert.doesNotMatch(html, />CDMX</);
+  assert.match(html, /\/images\/catering-buffet\.jpg/);
+  assert.match(html, /\/images\/cake-fresh-flowers\.jpg/);
   assert.match(html, /\/servicios\/catering/);
   assert.match(html, /\/servicios\/pasteles-personalizados/);
   assert.match(html, /\/servicios\/reposteria/);
@@ -76,6 +79,11 @@ test("renders a distinct page for every service", async () => {
 
     if (pathname === "/servicios/reposteria") {
       assert.doesNotMatch(html, /reposteria-dessert-cups\.jpg/);
+    }
+    if (pathname === "/servicios/pasteles-personalizados") {
+      assert.match(html, /cake-minecraft\.jpg/);
+      assert.match(html, /cake-dog-birthday\.jpg/);
+      assert.match(html, /cake-cars\.jpg/);
     }
   }
 });

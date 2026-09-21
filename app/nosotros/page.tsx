@@ -27,7 +27,7 @@ export default function AboutPage() {
           </div>
           <div className="about-hero-photo">
             <img
-              src="/images/event-table.jpg"
+              src="/images/catering-croissant-platter.jpg"
               alt="Montaje preparado por Catering by Chef Pérez para un evento"
             />
             <span>Hecho a la medida</span>

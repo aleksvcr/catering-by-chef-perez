@@ -177,12 +177,12 @@ export function Hero() {
           </div>
         </div>
         <div className="hero-meta">
-          <span>CDMX</span><span>Atención directa</span><span>Hecho a la medida</span>
+          <span>Atención directa</span><span>Hecho a la medida</span>
         </div>
       </div>
       <div className="hero-photo">
-        <img src="/images/hero-event.jpg" alt="Mesa de postres preparada por Catering by Chef Perez" />
-        <span>Evento corporativo · Mesa de postres</span>
+        <img src="/images/hero-event-refined.jpg" alt="Mesa de postres con pieza central de chocolate preparada por Catering by Chef Perez" />
+        <span>Celebraciones · Mesa de postres</span>
       </div>
     </section>
   );

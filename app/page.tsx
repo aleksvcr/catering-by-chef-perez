@@ -8,8 +8,8 @@ const services = [
     subtitle: "Eventos a tu medida",
     description:
       "Menús y montajes pensados para el ritmo, el estilo y la escala de tu celebración.",
-    image: "/images/catering-spread.jpg",
-    alt: "Servicio de catering con bocadillos y fruta fresca",
+    image: "/images/catering-buffet.jpg",
+    alt: "Montaje de catering con bocadillos, repostería y bebidas",
     href: "/servicios/catering",
   },
   {
@@ -18,8 +18,8 @@ const services = [
     subtitle: "Una pieza, una historia",
     description:
       "Diseños únicos que parten de tu ocasión y terminan en un pastel que se siente completamente tuyo.",
-    image: "/images/custom-cake.jpg",
-    alt: "Pastel personalizado con flores rosas y blancas",
+    image: "/images/cake-fresh-flowers.jpg",
+    alt: "Pastel personalizado decorado con flores frescas y fruta",
     href: "/servicios/pasteles-personalizados",
   },
   {
@@ -104,12 +104,12 @@ export default function Home() {
 
         <section className="gallery-strip section-wrap" aria-label="Selección del trabajo de Chef Pérez">
           <figure className="gallery-large">
-            <img src="/images/event-table.jpg" alt="Mesa de catering preparada para un evento" />
-            <figcaption>Montaje y servicio · Eventos</figcaption>
+            <img src="/images/catering-croissant-platter.jpg" alt="Croissants salados preparados para un evento" />
+            <figcaption>Bocados salados · Catering</figcaption>
           </figure>
           <figure>
-            <img src="/images/canapes.jpg" alt="Canapés de salmón preparados para servir" />
-            <figcaption>Bocados salados · Catering</figcaption>
+            <img src="/images/reposteria-dessert-cups.jpg" alt="Postres individuales con frutos rojos" />
+            <figcaption>Postres individuales · Repostería</figcaption>
           </figure>
         </section>
 
