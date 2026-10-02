@@ -34,6 +34,13 @@ const services = [
   },
 ];
 
+const careerHighlights = [
+  "Rosewood Abu Dhabi",
+  "Waldorf Astoria Riviera Maya",
+  "Pierre Hermé",
+  "Sud777",
+];
+
 export default function Home() {
   return (
     <>
@@ -67,6 +74,36 @@ export default function Home() {
             <Link className="text-link story-link" href="/chef-valeria">
               Conoce a la chef <span aria-hidden="true">→</span>
             </Link>
+          </div>
+        </section>
+
+        <section
+          className="career-ribbon"
+          aria-labelledby="career-ribbon-title"
+        >
+          <div className="career-ribbon-heading section-wrap">
+            <p className="eyebrow">Trayectoria de la chef</p>
+            <h2 id="career-ribbon-title">
+              Experiencia formada en grandes cocinas.
+            </h2>
+          </div>
+          <div className="career-ribbon-viewport">
+            <div className="career-ribbon-track">
+              {[false, true].map((duplicate) => (
+                <ul
+                  className="career-ribbon-list"
+                  aria-hidden={duplicate || undefined}
+                  key={duplicate ? "duplicate" : "original"}
+                >
+                  {careerHighlights.map((brand) => (
+                    <li key={brand}>
+                      <span>{brand}</span>
+                      <i aria-hidden="true" />
+                    </li>
+                  ))}
+                </ul>
+              ))}
+            </div>
           </div>
         </section>
 

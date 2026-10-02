@@ -49,6 +49,11 @@ test("renders the complete Spanish landing page", async () => {
   assert.match(html, /\/servicios\/catering/);
   assert.match(html, /\/servicios\/pasteles-personalizados/);
   assert.match(html, /\/servicios\/reposteria/);
+  assert.match(html, /Trayectoria de la chef/);
+  assert.match(html, /Rosewood Abu Dhabi/);
+  assert.match(html, /Waldorf Astoria Riviera Maya/);
+  assert.match(html, /Pierre Hermé/);
+  assert.match(html, /Sud777/);
   assert.doesNotMatch(html, /images\.unsplash\.com/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton|Starter Project/i);
   assert.match(html, /class="instagram-icon"/);
