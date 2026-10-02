@@ -34,11 +34,13 @@ const services = [
   },
 ];
 
-const careerHighlights = [
-  "Rosewood Abu Dhabi",
-  "Waldorf Astoria Riviera Maya",
-  "Pierre Hermé",
-  "Sud777",
+const collaboratingBrands = [
+  "ella",
+  "BDB Agency",
+  "Colony Spaces",
+  "Widgetbook",
+  "FlutterConf Latam",
+  "Hubbard College of Administration",
 ];
 
 export default function Home() {
@@ -82,9 +84,9 @@ export default function Home() {
           aria-labelledby="career-ribbon-title"
         >
           <div className="career-ribbon-heading section-wrap">
-            <p className="eyebrow">Trayectoria de la chef</p>
+            <p className="eyebrow">Colaboraciones</p>
             <h2 id="career-ribbon-title">
-              Experiencia formada en grandes cocinas.
+              Marcas con las que hemos trabajado.
             </h2>
           </div>
           <div className="career-ribbon-viewport">
@@ -95,7 +97,7 @@ export default function Home() {
                   aria-hidden={duplicate || undefined}
                   key={duplicate ? "duplicate" : "original"}
                 >
-                  {careerHighlights.map((brand) => (
+                  {collaboratingBrands.map((brand) => (
                     <li key={brand}>
                       <span>{brand}</span>
                       <i aria-hidden="true" />
