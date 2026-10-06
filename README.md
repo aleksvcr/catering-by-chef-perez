@@ -36,5 +36,5 @@ npm test
 
 ## Contacto de la marca
 
-- Teléfono y WhatsApp: +52 55 6122 1199
+- Teléfono y WhatsApp: +52 998 322 2331
 - Instagram: [@catering.bychefperez](https://www.instagram.com/catering.bychefperez)
