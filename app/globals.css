@@ -88,10 +88,11 @@ p { text-wrap: pretty; }
 .career-ribbon-heading .eyebrow { margin: 0 0 5px; color: var(--sand); }
 .career-ribbon-heading h2 { max-width: 17ch; font-family: var(--display); font-size: clamp(1.7rem,3vw,2.8rem); font-weight: 500; letter-spacing: -.045em; line-height: 1.05; text-align: right; }
 .career-ribbon-viewport { overflow: hidden; -webkit-mask-image: linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent); mask-image: linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent); }
-.career-ribbon-track { width: max-content; display: flex; animation: career-ribbon-scroll 30s linear infinite; }
+.career-ribbon-track { width: max-content; display: flex; animation: career-ribbon-scroll 38s linear infinite; }
 .career-ribbon-list { display: flex; align-items: center; margin: 0; padding: 0; list-style: none; }
 .career-ribbon-list li { display: flex; align-items: center; gap: clamp(28px,4vw,64px); padding-right: clamp(28px,4vw,64px); white-space: nowrap; }
-.career-ribbon-list span { font-family: var(--display); font-size: clamp(1.75rem,3.8vw,3.85rem); font-weight: 500; letter-spacing: -.045em; line-height: 1; }
+.career-ribbon-logo { position: relative; width: clamp(190px,18vw,250px); height: clamp(120px,11vw,150px); margin: 0; overflow: hidden; background: #f8f3ea; border: 1px solid rgba(255,255,255,.18); border-radius: 2px; }
+.career-ribbon-logo img { position: absolute; inset: 18px; width: calc(100% - 36px); height: calc(100% - 36px); object-fit: contain; }
 .career-ribbon-list i { width: 7px; height: 7px; flex: 0 0 7px; background: var(--sand); transform: rotate(45deg); }
 .career-ribbon:hover .career-ribbon-track { animation-play-state: paused; }
 @keyframes career-ribbon-scroll { to { transform: translateX(-50%); } }
@@ -308,6 +309,8 @@ p { text-wrap: pretty; }
   .career-ribbon-heading { align-items: flex-start; flex-direction: column; gap: 11px; }
   .career-ribbon-heading h2 { max-width: 15ch; text-align: left; }
   .career-ribbon-viewport { -webkit-mask-image: linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent); mask-image: linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent); }
+  .career-ribbon-logo { width: 168px; height: 112px; }
+  .career-ribbon-logo img { inset: 13px; width: calc(100% - 26px); height: calc(100% - 26px); }
   .section-heading { grid-template-columns: 1fr; gap: 20px; }
   .service-grid { grid-template-columns: 1fr; gap: 52px; }
   .service-card:last-child { grid-column: auto; width: auto; margin: 0; }
@@ -369,8 +372,8 @@ p { text-wrap: pretty; }
   .career-ribbon-track { width: auto; }
   .career-ribbon-list { width: min(1180px, calc(100% - clamp(32px, 7vw, 104px))); display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 18px 32px; margin-inline: auto; }
   .career-ribbon-list[aria-hidden="true"] { display: none; }
-  .career-ribbon-list li { justify-content: space-between; gap: 16px; padding: 17px 0; border-top: 1px solid rgba(255,255,255,.16); white-space: normal; }
-  .career-ribbon-list span { font-size: clamp(1.35rem,3vw,2rem); }
+  .career-ribbon-list li { justify-content: space-between; gap: 16px; padding: 8px 0; white-space: normal; }
+  .career-ribbon-logo { width: 100%; height: 145px; }
 }
 
 @media (max-width: 700px) and (prefers-reduced-motion: reduce) {

@@ -3,8 +3,8 @@
 import Link from "next/link";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 
-const phoneDisplay = "+52 55 6122 1199";
-const phoneDial = "+525561221199";
+const phoneDisplay = "+52 998 322 2331";
+const phoneDial = "+529983222331";
 const instagram =
   "https://www.instagram.com/catering.bychefperez?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==";
 
@@ -17,7 +17,7 @@ export function WhatsAppLink({
   className?: string;
   message?: string;
 }) {
-  const href = `https://wa.me/525561221199?text=${encodeURIComponent(message)}`;
+  const href = `https://wa.me/529983222331?text=${encodeURIComponent(message)}`;
   return <a className={className} href={href} target="_blank" rel="noreferrer">{children}</a>;
 }
 

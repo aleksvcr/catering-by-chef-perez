@@ -40,7 +40,7 @@ test("renders the complete Spanish landing page", async () => {
   assert.match(html, /hecha a la medida/);
   assert.match(html, /Pasteles personalizados/);
   assert.match(html, /Repostería/);
-  assert.match(html, /https:\/\/wa\.me\/525561221199/);
+  assert.match(html, /https:\/\/wa\.me\/529983222331/);
   assert.match(html, /https:\/\/catering\.example\/og\.png/);
   assert.match(html, /\/images\/hero-event-refined\.jpg/);
   assert.doesNotMatch(html, />CDMX</);
@@ -50,12 +50,15 @@ test("renders the complete Spanish landing page", async () => {
   assert.match(html, /\/servicios\/pasteles-personalizados/);
   assert.match(html, /\/servicios\/reposteria/);
   assert.match(html, /Marcas con las que hemos trabajado/);
-  assert.match(html, />ella</);
-  assert.match(html, /BDB Agency/);
-  assert.match(html, /Colony Spaces/);
-  assert.match(html, /Widgetbook/);
-  assert.match(html, /FlutterConf Latam/);
-  assert.match(html, /Hubbard College of Administration/);
+  assert.match(html, /brand-ellaz\.jpeg/);
+  assert.match(html, /brand-bdb\.jpeg/);
+  assert.match(html, /brand-colony-spaces\.jpeg/);
+  assert.match(html, /brand-widgetbook\.jpeg/);
+  assert.match(html, /brand-flutterconf-latam\.jpeg/);
+  assert.match(html, /brand-hubbard-college\.jpeg/);
+  assert.match(html, /brand-anahuac-cancun\.svg/);
+  assert.match(html, /Logo de ellaz/);
+  assert.match(html, /Logo de Universidad Anáhuac Cancún/);
   assert.doesNotMatch(html, /Rosewood Abu Dhabi/);
   assert.doesNotMatch(html, /images\.unsplash\.com/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton|Starter Project/i);
@@ -102,7 +105,7 @@ test("renders the contact route with direct contact options", async () => {
 
   const html = await response.text();
   assert.match(html, /Cuéntale a Valeria qué quieres celebrar\./);
-  assert.match(html, /\+52 55 6122 1199/);
+  assert.match(html, /\+52 998 322 2331/);
   assert.match(html, /@catering\.bychefperez/);
   assert.match(html, /Continuar en WhatsApp/);
   assert.match(html, /name="servicio"/);

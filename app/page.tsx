@@ -35,12 +35,13 @@ const services = [
 ];
 
 const collaboratingBrands = [
-  "ella",
-  "BDB Agency",
-  "Colony Spaces",
-  "Widgetbook",
-  "FlutterConf Latam",
-  "Hubbard College of Administration",
+  { name: "ellaz", logo: "/images/brand-ellaz.jpeg" },
+  { name: "BDB Agency", logo: "/images/brand-bdb.jpeg" },
+  { name: "Colony Spaces", logo: "/images/brand-colony-spaces.jpeg" },
+  { name: "Widgetbook", logo: "/images/brand-widgetbook.jpeg" },
+  { name: "FlutterConf Latam", logo: "/images/brand-flutterconf-latam.jpeg" },
+  { name: "Hubbard College of Administration", logo: "/images/brand-hubbard-college.jpeg" },
+  { name: "Universidad Anáhuac Cancún", logo: "/images/brand-anahuac-cancun.svg" },
 ];
 
 export default function Home() {
@@ -98,8 +99,13 @@ export default function Home() {
                   key={duplicate ? "duplicate" : "original"}
                 >
                   {collaboratingBrands.map((brand) => (
-                    <li key={brand}>
-                      <span>{brand}</span>
+                    <li key={brand.name}>
+                      <figure className="career-ribbon-logo">
+                        <img
+                          src={brand.logo}
+                          alt={duplicate ? "" : `Logo de ${brand.name}`}
+                        />
+                      </figure>
                       <i aria-hidden="true" />
                     </li>
                   ))}

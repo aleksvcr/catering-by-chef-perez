@@ -21,7 +21,7 @@ export default function Contacto() {
       `Detalles: ${data.get("detalles") || "Sin detalles adicionales"}`,
     ].join("\n");
     window.open(
-      `https://wa.me/525561221199?text=${encodeURIComponent(message)}`,
+      `https://wa.me/529983222331?text=${encodeURIComponent(message)}`,
       "_blank",
       "noopener,noreferrer",
     );
@@ -46,7 +46,7 @@ export default function Contacto() {
             <h2>Estamos a un mensaje de distancia.</h2>
             <div className="contact-method">
               <span>Teléfono / WhatsApp</span>
-              <a href="tel:+525561221199">+52 55 6122 1199</a>
+              <a href="tel:+529983222331">+52 998 322 2331</a>
             </div>
             <div className="contact-method">
               <span>Instagram</span>
